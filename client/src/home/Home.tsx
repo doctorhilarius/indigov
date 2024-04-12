@@ -13,6 +13,9 @@ export default function Home() {
                     Download Constituent Information {'>>'}
                 </Link>
             </div>
+            <div>
+                <Link to={'/constituents/list'}>List Constituents {'>>'}</Link>
+            </div>
         </div>
     )
 }

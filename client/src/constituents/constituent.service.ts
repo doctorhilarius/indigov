@@ -6,7 +6,19 @@ export async function getConstituents(
     formData?: DownloadForm,
 ): Promise<Constituent[]> {
     // TODO: environment vars for domain
-    const url = `http://localhost:8000/api/constituent/?endDateTime=${formData?.endDateTime}&startDateTime=${formData?.startDateTime}`
+    let url = 'http://localhost:8000/api/constituent'
+    if (!!formData?.startDateTime) {
+        url += `?startDateTime=${formData.startDateTime}`
+    }
+    if (!!formData?.endDateTime) {
+        if (formData.startDateTime) {
+            url += '&'
+        }
+        if (!formData.startDateTime) {
+            url += '?'
+        }
+        url += `endDateTime=${formData.endDateTime}`
+    }
     const result: Response = await fetch(url, { method: 'GET' })
     const data: Constituent[] = await result.json()
     return data

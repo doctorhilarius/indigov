@@ -109,7 +109,7 @@ This application uses the following:
 - react-csv 2
 - react-hook-form 
 
-All the FE source code is in the [`/client](client/)` directory and the React Apps is defined in [./client/src/App.tsx](client/src/App.tsx).
+All the FE source code is in the [`/client`](client/) directory and the React Apps is defined in [./client/src/App.tsx](client/src/App.tsx).
 
 ## Development
 

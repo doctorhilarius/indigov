@@ -1,0 +1,6 @@
+PORT=8000
+DB=my-db
+DB_USER=my-user
+DB_PASSWORD=my-password
+DB_HOST=db.host.cloud
+DB_PORT=1433

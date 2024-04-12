@@ -1,0 +1,14 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  display: inline-grid;
+  margin-bottom: 15px;
+}
+
+.error {
+  color: red;
+  margin-left: 5px;
+}

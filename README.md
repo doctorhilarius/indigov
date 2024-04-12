@@ -35,6 +35,8 @@ A fast-follow release should prioritize the following:
 - Input validation for API
 - create PWA manifest
 - Datepicker for download form
+- Add search, sort, and/or filter functionality to the list of constituents in the system
+- Add the ability to upload CSVs of contact data to the system
 
 ## Tech stack
 
@@ -88,12 +90,12 @@ The database configuration is defined in an `.env` file, an example for which is
 This API uses the following:
 
 - Express 4
-- Node 18.20.2
+- Node 20.12.2
 - TypeScript 5.4.3
 
 The API is defined in [./app.ts](app.ts).
 
-All the API source code is in the `./server` directory.
+All the API source code is in the [`./server`](server/) directory.
 
 New API paths should be added in [./server/lib/config.ts](server/lib/config.ts) and in the `routes` function of [./server/lib/server.ts](server/lib/server.ts).
 
@@ -107,7 +109,7 @@ This application uses the following:
 - react-csv 2
 - react-hook-form 
 
-All the FE source code is in the `/client` directory and the React Apps is defined in [./client/src/App.tsx](client/src/App.tsx).
+All the FE source code is in the [`/client](client/)` directory and the React Apps is defined in [./client/src/App.tsx](client/src/App.tsx).
 
 ## Development
 
@@ -130,20 +132,3 @@ Set up to format on save or run manually:
 ```
 % npm run pretty
 ```
-
-
-
-## What we are looking for:
-● A back-end solution: a solid functional service that can receive REST calls
-● Instructions on how to run the app
-● Be prepared to describe your thought process and tradeoffs you made
-● It’s okay to stub or mock out pieces you don’t have time to get to
-● It’s encouraged to bring in libraries you are comfortable with
-● If you have extra time, feel free to add additional features that you find interesting
-
-## Extra points (totally not necessary):
-● Making a frontend that looks snazzy
-● Add search, sort, and/or filter functionality to the list of constituents in the system
-● Add the ability to upload CSVs of contact data to the system
-● Thorough validation of incoming data
-● Authentication and other security feature

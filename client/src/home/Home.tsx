@@ -4,6 +4,9 @@ export default function Home() {
     return (
         <div>
             <div>
+                <Link to={'/constituents/list'}>List Constituents {'>>'}</Link>
+            </div>
+            <div>
                 <Link to={'/constituents/save'}>
                     Enter Constituent Information {'>>'}
                 </Link>
@@ -12,9 +15,6 @@ export default function Home() {
                 <Link to={'/constituents/download'}>
                     Download Constituent Information {'>>'}
                 </Link>
-            </div>
-            <div>
-                <Link to={'/constituents/list'}>List Constituents {'>>'}</Link>
             </div>
         </div>
     )
